@@ -101,12 +101,16 @@ class Assignment
   # Delete rows from DB
   #
   def delete_user(id)
+      user = get_user_byid(id)
+      user.delete
       # accept an id input parameter
       # use the User Model class to remove the User associated with the `id` primary key from the database
       # (no return is required)
   end 
 
   def delete_todolist(id)
+      todolist = get_todolist_byid(id)
+      todolist.delete
       # accept an id input parameter
       # use the TodoList Model class to remove the TodoList associated with the `id` primary key.
       # (no return is required)
