@@ -63,6 +63,7 @@ class Assignment
   # Get rows from DB by PK
   #
   def get_user_byid(id)
+    User.where(id: id)
       # accept an id input parameter
       # use the User Model class to get the User associated with the `id` primary key
       # return the User instance that matches the provided id
